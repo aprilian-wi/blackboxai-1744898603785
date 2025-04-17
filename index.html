@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MeningitisGo - Vaksin Meningitis Home Service</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .mobile-container {
+            max-width: 400px;
+            margin: 0 auto;
+            background: white;
+            min-height: 100vh;
+            position: relative;
+        }
+        .hero-image {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                            url('https://images.pexels.com/photos/2833167/pexels-photo-2833167.jpeg');
+            background-size: cover;
+            background-position: center;
+        }
+        .whatsapp-float {
+            position: fixed;
+            bottom: 20px;
+            right: 50%;
+            transform: translateX(50%);
+            z-index: 1000;
+            max-width: 400px;
+            width: calc(100% - 32px);
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <div class="mobile-container">
+        <!-- Hero Section -->
+        <section class="hero-image h-[500px] flex items-center justify-center text-white text-center px-4 relative">
+            <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+            <div class="relative z-10">
+                <h1 class="text-3xl font-bold mb-4">Vaksin Meningitis di Rumah Anda – Cepat, Aman, Bersertifikat</h1>
+                <p class="text-lg mb-8">Layanan vaksinasi meningitis & pembuatan Kartu Kuning (ICV) untuk jemaah Haji dan Umroh. Tanpa antre, tanpa ribet – kami datang ke lokasi Anda.</p>
+                <div class="space-y-4">
+                    <a href="https://wa.me/6281910670890" class="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-8 rounded-full inline-block w-full transition duration-300">
+                        <i class="fab fa-whatsapp mr-2"></i> Pesan Sekarang via WhatsApp
+                    </a>
+                    <button onclick="document.getElementById('area-layanan').scrollIntoView({behavior: 'smooth'})" class="bg-white hover:bg-gray-100 text-gray-800 font-bold py-3 px-8 rounded-full inline-block w-full transition duration-300">
+                        Lihat Wilayah Layanan
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tim Medis & Sertifikasi Section -->
+        <section class="px-4 py-10 bg-white">
+            <h2 class="text-2xl font-bold text-center mb-8">Tim Medis Profesional & Tersertifikasi</h2>
+            
+            <!-- Tim Medis Info -->
+            <div class="bg-gray-50 rounded-lg p-6 mb-8">
+                <h3 class="font-semibold text-lg mb-4">Tim Medis Berpengalaman</h3>
+                <ul class="space-y-4">
+                    <li class="flex items-start">
+                        <div class="bg-white rounded-full p-2 mr-4">
+                            <i class="fas fa-user-md text-2xl text-green-500"></i>
+                        </div>
+                        <div>
+                            <p class="font-medium text-lg mb-1">Dokter Spesialis</p>
+                            <p class="text-gray-600">Ditangani oleh dokter dengan pengalaman lebih dari 10 tahun</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <div class="bg-white rounded-full p-2 mr-4">
+                            <i class="fas fa-syringe text-2xl text-green-500"></i>
+                        </div>
+                        <div>
+                            <p class="font-medium text-lg mb-1">Perawat Profesional</p>
+                            <p class="text-gray-600">Tim perawat terlatih dan bersertifikat</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <div class="bg-white rounded-full p-2 mr-4">
+                            <i class="fas fa-clipboard-check text-2xl text-green-500"></i>
+                        </div>
+                        <div>
+                            <p class="font-medium text-lg mb-1">Prosedur Terstandar</p>
+                            <p class="text-gray-600">Mengikuti standar WHO dan Kementerian Kesehatan RI</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Sertifikasi Cards -->
+            <div class="bg-gradient-to-b from-green-50 to-white rounded-xl p-5">
+                <h3 class="font-bold text-lg mb-5 text-center">Diawasi & Disertifikasi Oleh</h3>
+                <div class="grid grid-cols-2 gap-3">
+                    <div class="bg-white rounded-lg p-3 text-center shadow hover:shadow-lg transition-shadow duration-300 border border-green-100">
+                        <div class="bg-green-50 rounded-full h-14 w-14 mx-auto flex items-center justify-center mb-2">
+                            <i class="fas fa-hospital-user text-xl text-green-600"></i>
+                        </div>
+                        <p class="font-bold text-sm text-gray-800 leading-tight mb-1">Kementerian Kesehatan RI</p>
+                        <span class="text-[10px] font-medium text-green-600 bg-green-50 rounded-full py-1 px-2 inline-block leading-none">Tersertifikasi & Diawasi</span>
+                    </div>
+                    <div class="bg-white rounded-lg p-3 text-center shadow hover:shadow-lg transition-shadow duration-300 border border-green-100">
+                        <div class="bg-green-50 rounded-full h-14 w-14 mx-auto flex items-center justify-center mb-2">
+                            <i class="fas fa-file-medical text-xl text-green-600"></i>
+                        </div>
+                        <p class="font-bold text-sm text-gray-800 leading-tight mb-1">Kantor Kesehatan Pelabuhan</p>
+                        <span class="text-[10px] font-medium text-green-600 bg-green-50 rounded-full py-1 px-2 inline-block leading-none">ICV Resmi & Tervalidasi</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Kenapa Pilih Section -->
+        <section class="px-4 py-10 bg-gray-50">
+            <h2 class="text-2xl font-bold text-center mb-8">Kenapa Pilih MeningitisGo?</h2>
+            <div class="space-y-6">
+                <div class="flex items-start space-x-4">
+                    <div class="text-green-500 mt-1"><i class="fas fa-check-circle text-xl"></i></div>
+                    <div>
+                        <h3 class="font-semibold text-lg">Vaksin Resmi & Tenaga Medis Profesional</h3>
+                        <p class="text-gray-600">Ditangani langsung oleh tenaga medis berpengalaman</p>
+                    </div>
+                </div>
+                <div class="flex items-start space-x-4">
+                    <div class="text-green-500 mt-1"><i class="fas fa-id-card text-xl"></i></div>
+                    <div>
+                        <h3 class="font-semibold text-lg">Termasuk Pembuatan ICV (Kartu Kuning)</h3>
+                        <p class="text-gray-600">Langsung terbit setelah vaksinasi</p>
+                    </div>
+                </div>
+                <div class="flex items-start space-x-4">
+                    <div class="text-green-500 mt-1"><i class="fas fa-home text-xl"></i></div>
+                    <div>
+                        <h3 class="font-semibold text-lg">Layanan Home Service</h3>
+                        <p class="text-gray-600">Kami yang datang ke lokasi Anda</p>
+                    </div>
+                </div>
+                <div class="flex items-start space-x-4">
+                    <div class="text-green-500 mt-1"><i class="fas fa-users text-xl"></i></div>
+                    <div>
+                        <h3 class="font-semibold text-lg">Cocok untuk Individu, Keluarga, atau Grup</h3>
+                        <p class="text-gray-600">Fleksibel untuk berbagai kebutuhan</p>
+                    </div>
+                </div>
+                <div class="flex items-start space-x-4">
+                    <div class="text-green-500 mt-1"><i class="fas fa-handshake text-xl"></i></div>
+                    <div>
+                        <h3 class="font-semibold text-lg">Kerja Sama Travel & KBIH</h3>
+                        <p class="text-gray-600">Solusi untuk biro travel dan kelompok bimbingan</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cara Kerja Section -->
+        <section class="px-4 py-10 bg-white">
+            <h2 class="text-2xl font-bold text-center mb-8">Cara Kerja Kami</h2>
+            <div class="space-y-8">
+                <div class="flex items-center space-x-4">
+                    <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center text-white font-bold text-xl">1</div>
+                    <div>
+                        <h3 class="font-semibold text-lg">Hubungi Kami & Pilih Jadwal</h3>
+                        <p class="text-gray-600">Tentukan waktu yang nyaman untuk Anda</p>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center text-white font-bold text-xl">2</div>
+                    <div>
+                        <h3 class="font-semibold text-lg">Kami Datang ke Lokasi Anda</h3>
+                        <p class="text-gray-600">Tim medis kami akan datang tepat waktu</p>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center text-white font-bold text-xl">3</div>
+                    <div>
+                        <h3 class="font-semibold text-lg">Proses Vaksinasi + Penerbitan ICV</h3>
+                        <p class="text-gray-600">Vaksinasi dan pembuatan kartu kuning</p>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center text-white font-bold text-xl">4</div>
+                    <div>
+                        <h3 class="font-semibold text-lg">Selesai – Siap Berangkat!</h3>
+                        <p class="text-gray-600">Anda siap untuk perjalanan Umroh/Haji</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Area Layanan Section -->
+        <section id="area-layanan" class="px-4 py-10 bg-gray-50">
+            <h2 class="text-2xl font-bold text-center mb-8">Area Layanan</h2>
+            <div class="bg-white rounded-lg p-6">
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="text-center p-4 bg-gray-50 rounded-lg shadow">
+                        <i class="fas fa-map-marker-alt text-green-500 text-2xl mb-2"></i>
+                        <p class="font-semibold">Jakarta</p>
+                    </div>
+                    <div class="text-center p-4 bg-gray-50 rounded-lg shadow">
+                        <i class="fas fa-map-marker-alt text-green-500 text-2xl mb-2"></i>
+                        <p class="font-semibold">Bekasi</p>
+                    </div>
+                    <div class="text-center p-4 bg-gray-50 rounded-lg shadow">
+                        <i class="fas fa-map-marker-alt text-green-500 text-2xl mb-2"></i>
+                        <p class="font-semibold">Depok</p>
+                    </div>
+                    <div class="text-center p-4 bg-gray-50 rounded-lg shadow">
+                        <i class="fas fa-map-marker-alt text-green-500 text-2xl mb-2"></i>
+                        <p class="font-semibold">Tangerang</p>
+                    </div>
+                    <div class="text-center p-4 bg-gray-50 rounded-lg shadow col-span-2">
+                        <i class="fas fa-map-marker-alt text-green-500 text-2xl mb-2"></i>
+                        <p class="font-semibold">Bogor</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Biaya Section -->
+        <section class="px-4 py-10 bg-white">
+            <h2 class="text-2xl font-bold text-center mb-8">Biaya Layanan</h2>
+            <div class="bg-gray-50 rounded-lg p-6 shadow-lg text-center">
+                <p class="text-gray-600 mb-2">Vaksin Meningitis + ICV Resmi</p>
+                <p class="text-4xl font-bold text-green-500 mb-4">Rp 350.000</p>
+                <p class="text-sm text-gray-500 mb-4">(Harga tergantung lokasi & jumlah peserta)</p>
+                <div class="space-y-3 text-left">
+                    <div class="flex items-center">
+                        <i class="fas fa-check text-green-500 mr-2"></i>
+                        <p>Termasuk transportasi</p>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fas fa-check text-green-500 mr-2"></i>
+                        <p>Termasuk administrasi</p>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fas fa-check text-green-500 mr-2"></i>
+                        <p>Tidak ada biaya tambahan</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonial Section -->
+        <section class="px-4 py-10 bg-gray-50">
+            <h2 class="text-2xl font-bold text-center mb-8">Testimoni Pelanggan</h2>
+            <div class="space-y-6">
+                <div class="bg-white rounded-lg p-6">
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.pexels.com/photos/6953867/pexels-photo-6953867.jpeg" alt="Testimoni" class="w-12 h-12 rounded-full object-cover mr-4">
+                        <div>
+                            <p class="font-semibold">Siti Nurhayati</p>
+                            <p class="text-sm text-gray-600">Calon Jemaah Umroh, Jakarta</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic">"Pelayanan cepat & ramah. Saya tidak perlu keluar rumah untuk vaksin & ICV. Terima kasih MeningitisGo!"</p>
+                </div>
+                <div class="bg-white rounded-lg p-6">
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.pexels.com/photos/6953880/pexels-photo-6953880.jpeg" alt="Testimoni" class="w-12 h-12 rounded-full object-cover mr-4">
+                        <div>
+                            <p class="font-semibold">Bapak Hendra</p>
+                            <p class="text-sm text-gray-600">Owner Travel Umroh, Bekasi</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic">"Travel kami terbantu sekali dengan kerja sama bareng MeningitisGo. Jemaah happy, proses lancar!"</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Kerjasama Section -->
+        <section class="px-4 py-10 bg-white">
+            <h2 class="text-2xl font-bold text-center mb-8">Kerja Sama Travel & KBIH</h2>
+            <div class="bg-gray-50 rounded-lg p-6 shadow-lg text-center">
+                <img src="https://images.pexels.com/photos/4353813/pexels-photo-4353813.jpeg" alt="Kerjasama" class="w-full h-48 object-cover rounded-lg mb-6">
+                <p class="mb-6">Kami membuka peluang kerja sama untuk Travel Haji/Umroh, KBIH, maupun komunitas. Dapatkan harga khusus dan prioritas kunjungan untuk grup!</p>
+                <a href="https://wa.me/6281910670890" class="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-8 rounded-full inline-block transition duration-300">
+                    <i class="fab fa-whatsapp mr-2"></i> Hubungi untuk Info Kerja Sama
+                </a>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="px-4 py-10 bg-gray-50 mb-24">
+            <div class="text-center space-y-6 mb-8">
+                <h3 class="text-xl font-bold mb-4">Hubungi Kami Sekarang</h3>
+                <p class="mb-6">Ingin segera vaksin? Tim kami siap mengatur jadwal untuk Anda.</p>
+                <div class="space-y-4">
+                    <p><i class="far fa-clock text-green-500 mr-2"></i> Jam operasional: 08.00 – 20.00 WIB</p>
+                    <p><i class="fas fa-map-marker-alt text-green-500 mr-2"></i> Area layanan: JABODETABEK</p>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Floating WhatsApp Button -->
+        <div class="whatsapp-float">
+            <a href="https://wa.me/6281910670890" class="bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-6 rounded-full flex items-center justify-center shadow-lg transition duration-300">
+                <i class="fab fa-whatsapp text-2xl mr-2"></i> Pesan via WhatsApp
+            </a>
+        </div>
+    </div>
+</body>
+</html>
